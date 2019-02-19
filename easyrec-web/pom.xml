@@ -73,7 +73,7 @@
                 <artifactId>jaxws-maven-plugin</artifactId>
                 <version>1.12</version>
                 <executions>
-                    <execution>
+                    <!--<execution>
                         <id>EasyRecSoap</id>
                         <goals>
                             <goal>wsgen</goal>
@@ -84,9 +84,9 @@
                             <sourceDestDir>target/jaxws/wsgen/java</sourceDestDir>
                             <keep>true</keep>
                             <verbose>true</verbose>
-                            <!--<target>${java.target.version}</target>-->
+                            &lt;!&ndash;<target>${java.target.version}</target>&ndash;&gt;
                         </configuration>
-                    </execution>
+                    </execution>-->
                     <!--execution>
                       <id>MusicShopRecommenderWS</id>
                       <goals>
@@ -101,6 +101,15 @@
                       </configuration>
                     </execution-->
                 </executions>
+                <!--<dependencies>
+                    <dependency>
+                        <groupId>com.sun</groupId>
+                        <artifactId>tools</artifactId>
+                        <version>1.7</version>
+                        <scope>system</scope>
+                        <systemPath>E:/hs/software/JDK/JDK1.7/JDK1.7Program/lib/tools.jar</systemPath>
+                    </dependency>
+                </dependencies>-->
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
